@@ -182,8 +182,11 @@
 		//lets create customer instance
 		let customer= new Customer("Om Prakash","Peddamadthala");
 		
-		
-		
+			
 		console.log(customer.firstName);
 		console.log(customer.lastName);
 ```
+
+## NOTE :- for setter and getter need to run below Command
+	
+	sc --target ES5 --noEmitOnError  Customer.ts
