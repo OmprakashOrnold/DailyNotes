@@ -101,6 +101,16 @@
 	}
 ```
 ## 6 Example Define Class
+
+### Basic Structure
+```typescript
+	class Customer {
+	    // properties
+	    // constructors
+	    // getter / setter methods
+	}
+```
+### Example Class
 ```typescript
 	class Customer{
 	    
@@ -116,8 +126,7 @@
 	
 	console.log(customer.firstName);
 	console.log(customer.lastName);
-```
-	
+```	
 ## 7 Example Define Class And Constructor
 ```typescript
 	class Customer{
@@ -140,30 +149,41 @@
 
 ## 8 Example Getter & Setter For Class
 
-```typescript
-	class Customer{
-	    
-	private _firstName : string;
-	private _lastName : string;
-	  
-	    constructor(theFirst:string,theLast:string){
-	        this._firstName=theFirst;
-	        this._lastName=theLast
-	    }
-	
-	    public get firstName():string{
-	        return this._firstName;
-	    }
-	
-	    public get lastName():string{
-	        return this._lastName;
-	    }
-	
-	
-	}
+### Access Modifiers
+        
+- **public**   Property is accessible to all classes (default modifier
 
-	let customer= new Customer("Om Prakash","Peddamadthala");
-	
-	console.log(customer.firstName);
-	console.log(customer.lastName);
+- **private**  Property is only accessible in current class and subclasses
+
+- **protected** Property is only accessible in current class
+
+### Example
+```typescript
+		class Customer{
+		    
+		private _firstName : string;
+		private _lastName : string;
+		  
+		    constructor(theFirst:string,theLast:string){
+		        this._firstName=theFirst;
+		        this._lastName=theLast
+		    }
+		
+		    public get firstName():string{
+		        return this._firstName;
+		    }
+		
+		    public get lastName():string{
+		        return this._lastName;
+		    }
+		
+		
+		}
+		//lets create customer instance
+		let customer= new Customer("Om Prakash","Peddamadthala");
+		
+		
+		
+		console.log(customer.firstName);
+		console.log(customer.lastName);
 ```
