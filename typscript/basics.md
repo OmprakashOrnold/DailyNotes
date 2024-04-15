@@ -65,9 +65,9 @@
 	//string template
 	console.log(`Here my name is ${firstName}  ${lastName}`);
 ```	
-	
+```typescript	
  ## 3 Example Loops And Array
-```typescript
+
 	let numberArray:number[]=[1,4,5,6,4,-3];
 	 
 	let addNumber:number =0;
@@ -75,4 +75,95 @@
 	  addNumber=addNumber+numberArray[i];
 	}
 	console.log(addNumber)
+
+## 4 Example Simplified Loop
+```typescript
+	let sportsOne:string[] =["Golf","Football","Cricket","Swimming"];
+	
+	for(let tempSport of sportsOne){
+	    if(tempSport=="Cricket"){
+	        console.log(tempSport+">>> is my favorite")
+	    }else{
+	        console.log(tempSport)
+	    }
+	}
+```
+## 5 Example Growable Array
+```typescript
+	let games:string[]=["Carram","Chess","tennies","Football"];
+	
+	games.push("Vooley Ball");
+	games.push("Circket Ball")
+	
+	
+	for(let game of games){
+	    console.log(game);
+	}
+```
+## 6 Example Define Class
+```typescript
+	class Customer{
+	    
+	    firstName : string;
+	    lastName : string;
+	  
+	}
+	//lets create customer instance
+	let customer= new Customer();
+	
+	customer.firstName="Om Prakash";
+	customer.lastName="Peddamadthala";
+	
+	console.log(customer.firstName);
+	console.log(customer.lastName);
+```
+	
+## 7 Example Define Class And Constructor
+```typescript
+	class Customer{
+	
+	    firstName : string;
+	    lastName : string;
+	  
+	    constructor(theFirst:string,theLast:string){
+	        this.firstName=theFirst;
+	        this.lastName=theLast
+	    }
+	}
+	//lets create customer instance
+	let customer= new Customer("Om Prakash","Peddamadthala");
+	
+	
+	console.log(customer.firstName);
+	console.log(customer.lastName);
+```	
+
+## 8 Example Getter & Setter For Class
+
+```typescript
+	class Customer{
+	    
+	private _firstName : string;
+	private _lastName : string;
+	  
+	    constructor(theFirst:string,theLast:string){
+	        this._firstName=theFirst;
+	        this._lastName=theLast
+	    }
+	
+	    public get firstName():string{
+	        return this._firstName;
+	    }
+	
+	    public get lastName():string{
+	        return this._lastName;
+	    }
+	
+	
+	}
+
+	let customer= new Customer("Om Prakash","Peddamadthala");
+	
+	console.log(customer.firstName);
+	console.log(customer.lastName);
 ```
