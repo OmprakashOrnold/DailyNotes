@@ -187,6 +187,70 @@
 		console.log(customer.lastName);
 ```
 
-## NOTE :- for setter and getter need to run below Command
+## NOTE 1 :- If an error occurs version issue run below command (Flags)
 	
 	sc --target ES5 --noEmitOnError  Customer.ts
+
+## NOTE 2 :- To Generate tsConfig file (Instead of Flags use config file)
+
+	tsc --init
+
+## 9 Example Short Cut Constructor
+```typescript
+	class CustomerWork {
+	
+	    constructor( private _firstName:string, private _lastName:string){
+	       
+	    }
+	
+	public get firstName():string{
+	    return this._firstName;
+	}
+	
+	public get lastName():string{
+	    return this._lastName;
+	}
+	    
+	}
+	
+	//lets create instance
+	let customerWork =new CustomerWork("Prakash","aaasd");
+	
+	console.log(customerWork.firstName+" "+customerWork.lastName)
+```
+## TypeScript Modules
+
++ TypeScript supports the concept of modules
+
++ A module can **export** classes ,functions , variables etc..,
+
++ Another file can **import** classes ,functions, variables etc..,from a module
+
+## 10 Example Modules Export and Import
+
+### Example Export
+```typescript
+	export class CustomerNew {
+	
+	    constructor( private _firstName:string, private _lastName:string){
+	    }
+	
+	public get firstName():string{
+	    return this._firstName;
+	}
+	
+	public get lastName():string{
+	    return this._lastName;
+	}
+	    
+	}
+```	
+### Example Import
+```typescript
+	import { CustomerNew } from "./CustomerNew";
+	
+	let customerNew =new CustomerNew("Rakesh","Peddamadthala");
+	
+	console.log(customerNew.firstName);
+	console.log(customerNew.lastName);
+```
