@@ -254,3 +254,128 @@
 	console.log(customerNew.firstName);
 	console.log(customerNew.lastName);
 ```
+
+## Example Inheritance
+
+### Shape.ts
+```typescript
+	export class Shape{
+	    constructor( private _x:number,private _y:number){
+	    }
+	
+	    public get x(){
+	        return this._x;
+	    }
+	    public set x(value:number){
+	         this._x=value;
+	    }
+	    
+	    public get y(){
+	        return this._y;
+	    }
+	
+	    public set y(value:number){
+	         this._y=value;
+	    }
+	    
+	    getInfo():string{
+	        return  `x=${this._x} ,y=${this._y}`
+	    }
+	}
+	
+```
+### Circle.ts
+```typescript	
+	import { Shape } from "./Shape";
+	
+	export class Circle extends Shape{
+	
+	    constructor(theX:number,theY:number, private _radius:number){
+	         super(theX,theY);
+	    }
+	
+	    public get radius(){
+	         return this._radius;
+	    }
+	
+	    public set radius(value:number){
+	        this._radius=value;
+	    }
+	
+	     public getInfo(): string {
+	        return super.getInfo()+` radius=${this._radius} `
+	    }
+	}
+```
+### Rectangle.ts
+```typescript
+	import { Shape } from "./Shape";
+	
+	export class Rectangle extends Shape{
+	
+	
+	    constructor(theX:number,theY:number, private _width:number, private     _length:number){
+	        super(theX,theY)
+	    }
+	    
+	    public get width(){
+	        return this._width;
+	    };
+	
+	    public set width(value:number){
+	        this._width=value;
+	    }
+	
+	    public get length(){
+	        return this._length;
+	    };
+	
+	    public set length(value:number){
+	        this._length=value;
+	    }
+	
+	     public getInfo(): string {
+	        return super.getInfo()+` width =${this._width} , length = ${this._length}`
+	    }
+	
+	}
+```
+### Driver.ts
+```typescript
+	import { Shape } from "./Shape";
+	import { Circle } from "./Circle";
+	import { Rectangle } from "./Rectangle";
+	
+	//lets create instnce
+	let myShape =new Shape(23,7);
+	console.log(myShape.getInfo());
+	
+	let myCircle = new Circle(5,5,8.5);
+	console.log(myCircle.getInfo())
+	
+	let myRectangle =new Rectangle(0,0,2,4);
+	console.log(myRectangle.getInfo())
+```	
+
+### ArrayDriver.ts
+```typescript
+import { Shape } from "./Shape";
+import { Circle } from "./Circle";
+import { Rectangle } from "./Rectangle";
+
+//lets create instnce
+let myShape =new Shape(23,7);
+let myCircle = new Circle(5,5,8.5);
+let myRectangle =new Rectangle(0,0,2,4);
+
+let theShapes:Shape[]= [];
+
+theShapes.push(myShape);
+theShapes.push(myCircle);
+theShapes.push(myRectangle);
+
+
+for(let theShape of theShapes){
+    console.log(theShape.getInfo())
+}
+```
