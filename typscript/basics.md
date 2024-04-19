@@ -379,3 +379,7 @@ for(let theShape of theShapes){
     console.log(theShape.getInfo())
 }
 ```
+## Abstract Class and Abstract Methods as same like jave
+## Interfaces as same like java
+
+# Finished TypeScript ############
