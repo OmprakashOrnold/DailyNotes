@@ -38,7 +38,7 @@
 - **sales-person-list.component.spec.ts**: the unit test specifications
 - **UPDATE src/app/app.module.ts**: Adds the component to the main application module
 
-## Main Application Module
+### Main Application Module
 
 ## Step 4: Add new component selector to app template page
 
