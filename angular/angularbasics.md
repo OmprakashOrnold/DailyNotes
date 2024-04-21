@@ -48,17 +48,17 @@
      npm install -g @angular/cli
 
 
-    ng version
+     ng version
 
 
-    ng help
+     ng help
 
 
 ## Creating New Project with Angular CLI
 
-    ng new <your-project-name>
+     ng new <your-project-name>
 
-   ng new my-first-angular-project
+     ng new my-first-angular-project
 
 ## Running the Angular App
 ![Screenshot 2024-04-21 100631](https://github.com/OmprakashOrnold/DailyNotes/assets/36263846/506aecc5-a729-47b3-b65f-ad8e37b13338)
