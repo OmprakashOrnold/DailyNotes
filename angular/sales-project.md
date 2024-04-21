@@ -45,5 +45,51 @@
 ![Screenshot 2024-04-21 155820](https://github.com/OmprakashOrnold/DailyNotes/assets/36263846/9186682d-071d-4d95-86d3-f7bba4250c03)
 
 ## Step 5: Generate a SalesPerson class
+
+            ng generate class sales-person-list/SalesPerson
+
+```typescript
+            export class SalesPerson {
+
+               constructor(public firstName:string,
+                           public lastName:string,
+                           public email:string,
+                           public salesValume:number){
+                
+               }
+```
+
+}
+
 ![Screenshot 2024-04-21 155848](https://github.com/OmprakashOrnold/DailyNotes/assets/36263846/73c1d9b2-b5fe-453c-9f86-dd33cacdd924)
+## Step 6: In SalesPersonListComponent, create sample data
+![Uploading Screenshot 2024-04-21 165616.png…]()
+
+## Step 7: In sales-person-list template file, build HTML table by looping over data
+```html
+<table border="1">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Sales value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tempSalesPerson of salesPersonList">
+            <td>{{tempSalesPerson.firstName}}</td>
+            <td>{{tempSalesPerson.lastName}}</td>
+            <td>{{tempSalesPerson.email}}</td>
+            <td>{{tempSalesPerson.salesValume}}</td>
+        </tr>
+
+    </tbody>
+</table>
+
+```
+## ngFor 
+
+- ngFor is a structural directive
+• It renders a template for each item in a collection
 
