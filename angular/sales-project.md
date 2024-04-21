@@ -63,7 +63,8 @@
 
 ![Screenshot 2024-04-21 155848](https://github.com/OmprakashOrnold/DailyNotes/assets/36263846/73c1d9b2-b5fe-453c-9f86-dd33cacdd924)
 ## Step 6: In SalesPersonListComponent, create sample data
-![Uploading Screenshot 2024-04-21 165616.png…]()
+![Screenshot 2024-04-21 165616](https://github.com/OmprakashOrnold/DailyNotes/assets/36263846/6b410a57-0e9b-4755-9cac-a01b07ed2e5d)
+
 
 ## Step 7: In sales-person-list template file, build HTML table by looping over data
 ```html
