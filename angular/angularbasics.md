@@ -37,3 +37,33 @@
 - An Angular project is composed of multiple files
 
 ![Screenshot 2024-04-21 095640](https://github.com/OmprakashOrnold/DailyNotes/assets/36263846/cab3462f-77ba-4f43-ae02-aade86f67511)
+
+## Creating an Angular Project
+
+- Angular provides a command-line tool to generate a project
+- Generates the starter files to help you bootstrap your project
+
+## Angular CLI
+
+     npm install -g @angular/cli
+
+
+    ng version
+
+
+    ng help
+
+
+## Creating New Project with Angular CLI
+
+    ng new <your-project-name>
+
+   ng new my-first-angular-project
+
+## Running the Angular App
+![Screenshot 2024-04-21 100631](https://github.com/OmprakashOrnold/DailyNotes/assets/36263846/506aecc5-a729-47b3-b65f-ad8e37b13338)
+
+## Changing the Server Port
+![Screenshot 2024-04-21 101009](https://github.com/OmprakashOrnold/DailyNotes/assets/36263846/9fa0260e-fb15-405c-b15e-1bb54a5e756e)
+## Project Files
+![Screenshot 2024-04-21 100733](https://github.com/OmprakashOrnold/DailyNotes/assets/36263846/4e84a89e-9437-4b0f-8c5f-da90f0f1a418)
