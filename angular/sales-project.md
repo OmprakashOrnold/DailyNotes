@@ -89,8 +89,8 @@
 </table>
 
 ```
-## ngFor 
+### ngFor 
 
-- ngFor is a structural directive
-• It renders a template for each item in a collection
+ - ngFor is a structural directive
+ • It renders a template for each item in a collection
 
