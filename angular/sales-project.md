@@ -94,3 +94,36 @@
  - ngFor is a structural directive
  • It renders a template for each item in a collection
 
+### Conditional: ngIf
+
+-  Angular provides a structural directive: ngIf
+• Show content based on a condition / boolean expression
+
+```html
+           <td>
+               <div *ngIf= "tempSalesPerson.salesValume >=6000 ; else myElseBlock">Yes </div>
+               <ng-templateb #myElseBlock>No</ng-templateb>
+            </td>
+```
+### Angular Structural Directives
+#### Most commonly used structural directives: ngFor and ngIf
+• Also there other such as ngSwitch, ngStyle etc ...
+• See the documentation for details
+
+https://angular.io/api/common#directives
+
+### Currency Formatting
+
+- Angular provides currency formatting using Angular Pipes
+• You send data to a pipe for formatting
+
+            <p>Cost: {{ someValue | currency:'USD' }} </p>
+
+              <td>{{ tempSalesPerson.salesVolume | currency:'USD' }}</td
+
+### Angular Pipe
+
+• Other pipes available such as DatePipe, DecimalPipe, etc ...
+• See the documentation for details
+
+https://angular.io/api/common#pipes
