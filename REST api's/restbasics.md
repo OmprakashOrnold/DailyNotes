@@ -31,3 +31,28 @@ layered architecture helps to improve scalability by enabling load balancing.
 - **Code on Demand**: This constraint is optional. This constraint indicates that the 
 functionality of the client applications can be extended at runtime by allowing a 
 code download from the server and executing the code.
+
+## REST Key Concepts
+- Resource
+- Sub-resource
+- URI
+- HTTP Methods
+- HTTP Status Codes
+
+## REST - Resource
+• The fundamental concept of a REST-based system is the resource. A resource is anything you want 
+to expose to the outside world, through your application
+
+![Screenshot 2024-04-30 093404](https://github.com/OmprakashOrnold/DailyNotes/assets/36263846/bef25fd0-f0c2-40c9-925c-a1b106d6e0eb)
+
+## URI - Uniform Resource Identifier
+- The resource an be identified by  a **Uniform Resource Identifier (URI)**. For webbased systems,
+HTTP is the most commonly used protocol for communicating 
+with external systems. You can identify a unique resource using a URI.
+- Consider, we are developing a simple blog application and you can define URIs for  a blog Post resource
+
+- **GET**  http://localhost:8080/api/posts/ Returns a list of all posts
+- **GET**  http://localhost:8080/api/posts/2  Returns a post whose ID is 2
+- **POST**  http://localhost:8080/api/posts/  Creates a new Post resource
+- **PUT**  http://localhost:8080/api/posts/2  Updates a POST resource whose ID is 2
+- **DELETE**  http://localhost:8080/api/posts/2 Deletes a POST resource whose ID is 2****
